@@ -2,7 +2,7 @@ import React from "react";
 import FloatingParticles from "./FloatingParticles";
 import "./App.css";
 
-function App() {
+function Rules() {
   return (
     <div className="Main Page">
       <FloatingParticles />
@@ -24,7 +24,7 @@ function App() {
         <img src="/apmcozzy.png" className="ozzy" alt="ozzy" />
       </header>
       <div className="Content">
-        <div className="homeCard"><h1>home page here!!!</h1></div>
+        <div className="homeCard"><h1>Rules page here!!!</h1></div>
         <div className="homeCard">Card 2</div>
         <div className="homeCard">Card 3</div>
       </div>
@@ -32,4 +32,4 @@ function App() {
   );
 }
 
-export default App;
+export default Rules;
