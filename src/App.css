@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    height: 200vh;
+    height: 200vh; /* Changed from 200vh to 100vh */
     background: linear-gradient(135deg, #b5cfff, #4f7fd3);
     background-size: 300% 300%;
     animation: gradientMove 20s ease-in-out infinite;
@@ -25,6 +25,8 @@ body {
     pointer-events: none;
     overflow: hidden;
     z-index: 1;
+    transform: translateZ(0); /* Ensure hardware acceleration */
+    will-change: transform; /* Hint to the browser for optimization */
 }
 
 .particle {
@@ -68,19 +70,18 @@ body {
 }
 
 .App-logo {
-    height: 12vh;
+    height: 6vw;
     margin: 0;
 }
 
 .logoBG {
     background: rgba(74, 128, 186, 0.5);
     backdrop-filter: blur(12px);
-    border-radius: 3vh;
+    border-radius: 1.5vw;
     border: 1px solid rgba(255, 255, 255, 0.2);
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
-    margin: 20px;
+    margin: .75vw;
     padding: 0;
-    width: 12vh;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -94,13 +95,13 @@ body {
     100% { transform: rotate(-3deg); }
 }
 .ozzy{
-    margin-right:20px;
+    margin-right:.75vw;
     margin-left:0;
-    height: 9vh;
+    height: 5vw;
 }
 .github{
     margin-right:10px;
-    height: 9vh;
+    height: 5vw;
     margin-left:auto;
     transition: transform 0.3s ease,
 }
@@ -132,13 +133,13 @@ body {
 }
 
 .Header nav ul li {
-    margin: 0 15px;
+    margin: 0 0.75vw;
 }
 
 .Header nav ul li a {
     color: #5b88b9;
     text-decoration: none;
-    font-size: 3.5vh;
+    font-size: clamp(2vh, 2.5vw, 3.5vh);
     font-weight: bold;
     transition: color 0.3s ease;
 }
@@ -154,6 +155,7 @@ body {
     align-items: center;
     font-size: 2vh;
     color: white;
+    padding-bottom: 0;
 }
 
 

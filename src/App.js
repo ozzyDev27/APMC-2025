@@ -27,7 +27,7 @@ function Home() {
       </header>
       <div className="Content">
         <div className="horizontal-container">
-          <img src="/arduino.webp" className="arduino" alt="arduino" />
+          <img src="/arduino.png" className="arduino" alt="arduino" />
           <div className="homeCard">
             <h1>Abbey Park's Makers Competition</h1>
             <p className="centered-text">is an annual event held by the <b>Computer Engineering Club</b>! Bring your ideas to life using an <b>Arduino</b> to win prizes!</p>
