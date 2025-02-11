@@ -1,13 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 body {
-  background-color: #1D2240;
+  background-color: #b6c0de;
+  /* background-image: url("https://plsn.com/site/wp-content/uploads/fig-2.-1920px-SMPTE_Color_Bars_16x9.png"); */
   text-align: center;
+  background: radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 10%),
+              radial-gradient(circle, rgba(255,255,255,0.1) 10%, transparent 10%);
+  background-size: 5% 5%;
+  background-position: 0 0, 2.5% 2.5%;
+  animation: moveLights 10s linear infinite;
+  font-family: "Funnel Sans", serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
 }
 
 .App-logo {
   height: 12vh;
+  margin: 0;
+}
+.logoBG {
+  background: linear-gradient(135deg, rgba(74, 128, 186, 0.6), rgba(74, 128, 186, .3));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 3vh;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  z-index:999;
   margin-top: 20px;
   margin-left: 20px;
   margin-bottom: 20px;
+  padding: 0;
+  width: 12vh;
 }
 
 @keyframes App-logo-soft-rotate {
@@ -23,19 +47,24 @@ body {
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .logoBG {
     animation: App-logo-soft-rotate infinite 5s linear;
   }
 }
 
 .Header {
-  background-color: #12162E;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   font-size: calc(1vh + 2vmin);
-  color: white;
   border-radius: 0 0 2vh 2vh;
+  /**/
+  background: linear-gradient(135deg, rgba(230, 250, 255, 0.6), rgba(230, 250, 255, .5));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  z-index:999;
 }
   
 .Header nav {
@@ -54,7 +83,7 @@ body {
 }
 
 .Header nav ul li a {
-  color: white;
+  color: #5b88b9;
   text-decoration: none;
   font-size: 3vh;
   font-weight: bold;
@@ -70,48 +99,158 @@ body {
   color: white;
 }
 
-.Carousel {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px 0;
-  overflow: hidden;
-  width: 100%;
-  max-width: 100vw;
-}
-
-.Card {
-  min-width: 30vh;
-  height: 40vh;
-  background-color: #fff;
+.homeCard {
+  min-width: 40vw;
+  height: 20vw;
   color: #000;
-  margin: 0 2vh;
+  margin-bottom: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 2vh;
   flex-shrink: 0;
+  /*ok this better work please*/
+  background: linear-gradient(135deg, rgba(230, 250, 255, 0.3), rgba(230, 250, 255, .2));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border:1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  z-index:999;
 }
 
-.Card:nth-child(2) {
-  height:50vh;
-  width:37.5vh;
-  margin:0;
-}
-
-.Carousel-arrow {
-  background-color: #12162E;
-  color: white;
-  border: none;
-  padding: 2vh;
-  cursor: pointer;
+#h1 {
   font-size: 3vh;
+  margin: 0;
+  color:#fff;
 }
 
-.left-arrow {
-  margin-right: 2vw;
+.homeCard:nth-child(1) {
+  margin-right:10vw;
+  margin-left:auto;
+}
+.homeCard:nth-child(2) {
+  margin-left:10vw;
+  margin-right:auto;
+}
+.homeCard:nth-child(3) {
+  margin-right:10vw;
+  margin-left:auto;
+}
+/*aaaaaa
+
+
+.glowing {
+  position: relative;
+  transform-origin: right;
+  animation: colorChange 5s linear infinite;
 }
 
-.right-arrow {
-  margin-left: 2vw;
+.glowing:nth-child(even) {
+  transform-origin: left;
 }
+
+@keyframes colorChange {
+  0% {
+    filter: hue-rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+
+.glowing span {
+  position: absolute;
+  top: calc(80px * var(--i));
+  left: calc(80px * var(--i));
+  bottom: calc(80px * var(--i));
+  right: calc(80px * var(--i));
+}
+
+.glowing span::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: -8px;
+  width: 15px;
+  height: 15px;
+  background: #f00;
+  border-radius: 50%;
+}
+
+.glowing span:nth-child(3n + 1)::before {
+  background: rgba(134,255,0,1);
+  box-shadow: 0 0 20px rgba(134,255,0,1),
+    0 0 40px rgba(134,255,0,1),
+    0 0 60px rgba(134,255,0,1),
+    0 0 80px rgba(134,255,0,1),
+    0 0 0 8px rgba(134,255,0,.1);
+}
+
+.glowing span:nth-child(3n + 2)::before {
+  background: rgba(255,214,0,1);
+  box-shadow: 0 0 20px rgba(255,214,0,1),
+    0 0 40px rgba(255,214,0,1),
+    0 0 60px rgba(255,214,0,1),
+    0 0 80px rgba(255,214,0,1),
+    0 0 0 8px rgba(255,214,0,.1);
+}
+
+.glowing span:nth-child(3n + 3)::before {
+  background: rgba(0,226,255,1);
+  box-shadow: 0 0 20px rgba(0,226,255,1),
+    0 0 40px rgba(0,226,255,1),
+    0 0 60px rgba(0,226,255,1),
+    0 0 80px rgba(0,226,255,1),
+    0 0 0 8px rgba(0,226,255,.1);
+}
+
+.glowing span:nth-child(3n + 1) {
+  animation: animate 10s alternate infinite;
+}
+
+.glowing span:nth-child(3n + 2) {
+  animation: animate-reverse 3s alternate infinite;
+}
+
+.glowing span:nth-child(3n + 3) {
+  animation: animate 8s alternate infinite; 
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(180deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate-reverse {
+  0% {
+    transform: rotate(360deg);
+  }
+  
+  50% {
+    transform: rotate(180deg);
+  }
+  
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes moveLights {
+  0% {
+    background-position: 0 0, 2.5% 2.5%;
+  }
+  100% {
+    background-position: 100% 100%, 97.5% 97.5%;
+  }
+}
+  */
