@@ -101,7 +101,7 @@ function Rules() {
         <div className="homeCard">
           <h1>Rules #7: Ask Questions!</h1>
           <p>If you ever feel like breaking or bending a rule, <b>ask an exec!</b> If you are not sure of something, <b>ask an exec!</b> If you want help or ideas, <b>ask an exec!</b></p>
-        </div>
+        </div> 
       </div>
     </div>
   );
