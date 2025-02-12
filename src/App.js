@@ -152,13 +152,13 @@ function Awards() {
           </div>
           <div className="homeCard award secondaward">
             <h1>Hardware Hacker</h1>
-            <p>The hardware hacker award is for the best use of hardware in the project! If you win, you will get a 3D printed trophy!</p>
+            <p>The hardware hacker award is for the best use of hardware in the project! If you win, you will get a <b>3D printed trophy!</b></p>
           </div>
         </div>
         <div className="firstplace">
           <div className="homeCard award firstaward">
             <h1>Programming Prize</h1>
-            <p>The prize for outstanding software is a 3D printed trophy! Your project must demonstrate skill and proficiency in programming and have creative solutions to problems!</p>
+            <p>The prize for outstanding software is a <b>3D printed trophy!</b> Your project must demonstrate skill and proficiency in programming and have creative solutions to problems!</p>
           </div>
           <div className="homeCard esp">
             <img src="/program.png" className="programming" alt="esp32" />
@@ -170,7 +170,7 @@ function Awards() {
           </div>
           <div className="homeCard award secondaward">
             <h1>Enjoyment Award</h1>
-            <p>The enjoyment award is for projects that are the most fun to use or the most useful! Your project's user experience will be something to remember!</p>
+            <p>The enjoyment award is for projects that are the most fun to use or the most useful! Your project's user experience will be something to remember! You will also get a <b>3D printed trophy for this award</b></p>
           </div>
         </div>
       </div>
