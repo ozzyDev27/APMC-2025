@@ -17,13 +17,16 @@ function Home() {
             <li><a href="/rules" className="text-white">Rules</a></li>
             <li><a href="https://docs.google.com/forms/d/1ecz6TbcN_RBSE0hCNH_epF25TRaeCkhZ8mJ9HbVuctg/edit" className="text-white">Sign Up</a></li>
             <li><a href="https://forms.gle/4xnHRcp9AjVPUe946" className="text-white">Materials</a></li>
-            {/* <li><a href="/awards" className="text-white">Awards</a></li> */}
+            <li><a href="/awards" className="text-white">Awards</a></li>
           </ul>
         </nav>
         <a href="https://github.com/ozzyDev27/APMC-2025" className="github">
         <img src="/apmcgithub.png" className="github" alt="repo" />
         </a>
+        <a href="https://github.com/ozzyDev27">
         <img src="/apmcozzy.png" className="ozzy" alt="ozzy" />
+        </a>
+          
       </header>
       <div className="Content">
         <div className="horizontal-container">
@@ -63,13 +66,15 @@ function Rules() {
             <li><a href="/rules" className="text-white">Rules</a></li>
             <li><a href="https://docs.google.com/forms/d/1ecz6TbcN_RBSE0hCNH_epF25TRaeCkhZ8mJ9HbVuctg/edit" className="text-white">Sign Up</a></li>
             <li><a href="https://forms.gle/4xnHRcp9AjVPUe946" className="text-white">Materials</a></li>
-            {/* <li><a href="/awards" className="text-white">Awards</a></li> */}
+            <li><a href="/awards" className="text-white">Awards</a></li>
           </ul>
         </nav>
         <a href="https://github.com/ozzyDev27/APMC-2025" className="github">
         <img src="/apmcgithub.png" className="github" alt="repo" />
         </a>
+        <a href="https://github.com/ozzyDev27">
         <img src="/apmcozzy.png" className="ozzy" alt="ozzy" />
+        </a>
       </header>
       <div className="Content">
         <div className="homeCard top rulescard">
@@ -127,12 +132,47 @@ function Awards() {
         <a href="https://github.com/ozzyDev27/APMC-2025" className="github">
         <img src="/apmcgithub.png" className="github" alt="repo" />
         </a>
+        <a href="https://github.com/ozzyDev27">
         <img src="/apmcozzy.png" className="ozzy" alt="ozzy" />
+        </a>
       </header>
       <div className="Content">
-        <div className="homeCard award"><h1>Awards page here!!!</h1></div>
-        <div className="homeCard award">Award 1</div>
-        <div className="homeCard award">Award 2</div>
+        <div className="firstplace">
+          <div className="homeCard award firstaward">
+            <h1>Grand Prize</h1>
+            <p>The first place prize for best overall project is an <b>ESP32</b> with a camera as well as <b>$50</b>! Your project must be balanced between creativity, execution, aesthetics, usefulness, and enjoyment!</p>
+          </div>
+          <div className="homeCard esp">
+            <img src="/esp32.png" className="esp32" alt="esp32" />
+          </div>
+        </div>
+        <div className="hardware">
+          <div className="homeCard circuit">
+            <img src="/hardware.png" className="circuitboard" alt="hardware" />
+          </div>
+          <div className="homeCard award secondaward">
+            <h1>Hardware Hacker</h1>
+            <p>The hardware hacker award is for the best use of hardware in the project! If you win, you will get a 3D printed trophy!</p>
+          </div>
+        </div>
+        <div className="firstplace">
+          <div className="homeCard award firstaward">
+            <h1>Programming Prize</h1>
+            <p>The prize for outstanding software is a 3D printed trophy! Your project must demonstrate skill and proficiency in programming and have creative solutions to problems!</p>
+          </div>
+          <div className="homeCard esp">
+            <img src="/program.png" className="programming" alt="esp32" />
+          </div>
+        </div>
+        <div className="hardware">
+          <div className="homeCard happiness">
+            <img src="/happy.png" className="happy" alt="hardware" />
+          </div>
+          <div className="homeCard award secondaward">
+            <h1>Enjoyment Award</h1>
+            <p>The enjoyment award is for projects that are the most fun to use or the most useful! Your project's user experience will be something to remember!</p>
+          </div>
+        </div>
       </div>
     </div>
   );
