@@ -283,6 +283,23 @@ b {
   animation: gradientAnimation 5s ease infinite;
 }
 
+.rulescard {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  text-align: center;
+}
+
+.rulescard h1 {
+  font-size: 3vw;
+  margin-right: auto;
+  margin-left:auto;
+}
+
+.rulescard p {
+  font-size: 1.5vw;
+}
+
 .arduino {
     width:30vw;
     z-index:100;
@@ -313,7 +330,6 @@ b {
 .calendar:hover {
   transform: scale(1.1);
 }
-
 .secondcontainer {
   display: flex;
   align-items: center;
@@ -323,27 +339,37 @@ b {
   padding-left: 10vw;
   margin-top:1vw;
 }
-
 @media (max-width: 768px), (orientation: portrait) {
     .arduino, .calendar, .ozzy, .github {
-        display: none; /* Hide images on mobile or vertical orientation */
+        display: none;
     }
     .horizontal-container, .secondcontainer{
       padding:0;
       margin-left:auto;
       margin-right:auto;
       justify-content: center;
+      margin-top:0;
+      margin-bottom:0;
+      padding:0;
     }
     .homeCard{
       align-self: center;
-      margin-right:40%;
+      margin-right:auto;
       margin-left:auto;
-      scale: 1.5;
+      scale: 2;
+      margin-top:15vw;
     }
-    .horizontal-container:nth-child(2) {
-      margin-left: 0;
-      margin-right: 0;
-      padding-left:0;
-      padding-right:0;
-  }
+    .App-logo {
+      height: 10vw;
+    }
+    .Header {
+      height: 7.5vh;
+      margin-bottom: 0;
+    }
+    .top {
+      margin-top: 0;
+    }
+    .rulescard h1 {
+      font-size:2vw;
+    }
 }

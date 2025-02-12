@@ -28,7 +28,7 @@ function Home() {
       <div className="Content">
         <div className="horizontal-container">
           <img src="/arduino.png" className="arduino" alt="arduino" />
-          <div className="homeCard">
+          <div className="homeCard top">
             <h1>Abbey Park's Makers Competition</h1>
             <p className="centered-text">is an annual event held by the <b>Computer Engineering Club</b>! Bring your ideas to life using an <b>Arduino</b> to win prizes!</p>
           </div>
@@ -72,34 +72,34 @@ function Rules() {
         <img src="/apmcozzy.png" className="ozzy" alt="ozzy" />
       </header>
       <div className="Content">
-        <div className="homeCard">
-          <h1>Rules #1: Groups</h1>
+        <div className="homeCard top rulescard">
+          <h1>Rule #1: Groups</h1>
           <p><b>Anyone</b> is able to join, even <b>outside</b> of the club! (You still have to be enrolled at <b>APHS</b>!)</p>
           <p>Each group has a maximum of <b>3</b> people! You are also allowed to work <b>alone</b>.</p>
         </div>
-        <div className="homeCard">
-          <h1>Rules #2: Award Exclusivity</h1>
+        <div className="homeCard rulescard">
+          <h1>Rule #2: Award Exclusivity</h1>
           <p>Each group is only allowed to win <b>one</b> award. Your final score is based on the <b>general criteria</b> and the <b>category criteria</b>, which are all weighted <b>equally</b>.</p>
         </div>
-        <div className="homeCard">
-          <h1>Rules #3: Late Submissions</h1>
+        <div className="homeCard rulescard">
+          <h1>Rule #3: Late Submissions</h1>
           <p>You will present your project on <b>March 5th</b> at the club. Please submit it <b>before</b> then!</p>
         </div>
-        <div className="homeCard">
-          <h1>Rules #4: The Arduino & Microcontrollers</h1>
+        <div className="homeCard rulescard">
+          <h1>Rule #4: The Arduino & Microcontrollers</h1>
           <p>This is an <b>Arduino</b> based competition! The Arduino must be <b>prominently</b> shown and used. If you want to use another microcontroller in <b>conjunction</b> with the Arduino, ask an exec!</p>
         </div>
-        <div className="homeCard">
-          <h1>Rules #5: Components</h1>
+        <div className="homeCard rulescard">
+          <h1>Rule #5: Components</h1>
           <p>You are <b>not</b> allowed to use your own components. All components must come from the club! If you want a specific component, fill out the <b>material request form</b> (at the top of this website)!</p>
         </div>
-        <div className="homeCard">
-          <h1>Rules #6: The Code</h1>
+        <div className="homeCard rulescard">
+          <h1>Rule #6: The Code</h1>
           <p><b>Please</b> try to <b>refrain</b> from using AI to write your code! Also try to either write your code <b>clearly</b> or <b>comment</b> your code so we understand its function!</p>
           <p>Plagiarism will get you <b>executed</b>.</p>
         </div>
-        <div className="homeCard">
-          <h1>Rules #7: Ask Questions!</h1>
+        <div className="homeCard rulescard">
+          <h1>Rule #7: Ask Questions!</h1>
           <p>If you ever feel like breaking or bending a rule, <b>ask an exec!</b> If you are not sure of something, <b>ask an exec!</b> If you want help or ideas, <b>ask an exec!</b></p>
         </div> 
       </div>
@@ -130,9 +130,9 @@ function Awards() {
         <img src="/apmcozzy.png" className="ozzy" alt="ozzy" />
       </header>
       <div className="Content">
-        <div className="homeCard"><h1>Awards page here!!!</h1></div>
-        <div className="homeCard">Award 1</div>
-        <div className="homeCard">Award 2</div>
+        <div className="homeCard award"><h1>Awards page here!!!</h1></div>
+        <div className="homeCard award">Award 1</div>
+        <div className="homeCard award">Award 2</div>
       </div>
     </div>
   );
