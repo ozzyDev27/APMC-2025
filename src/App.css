@@ -2,7 +2,7 @@
 
 body {
     margin: 0;
-    height: 200vh; /* Changed from 200vh to 100vh */
+    height: 100%;
     background: linear-gradient(135deg, #b5cfff, #4f7fd3);
     background-size: 300% 300%;
     animation: gradientMove 20s ease-in-out infinite;
@@ -25,8 +25,8 @@ body {
     pointer-events: none;
     overflow: hidden;
     z-index: 1;
-    transform: translateZ(0); /* Ensure hardware acceleration */
-    will-change: transform; /* Hint to the browser for optimization */
+    transform: translateZ(0);
+    will-change: transform;
 }
 
 .particle {
@@ -119,6 +119,7 @@ body {
     border-radius: 0 0 2vh 2vh;
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+    height:9vw;
 }
 
 .Header nav {
@@ -156,8 +157,9 @@ body {
     font-size: 2vh;
     color: white;
     padding-bottom: 0;
+    margin-bottom: 0;
+    justify-content: center; /* Center the content vertically */
 }
-
 
 .homeCard {
     min-width: 35vw;
@@ -166,7 +168,7 @@ body {
     color: #000;
     margin-bottom: 5vh;
     border-radius: 2vh;
-    margin-top:2.5vh;
+    margin-top: 2.5vh;
     flex-shrink: 0;
     background: rgba(230, 250, 255, 0.2);
     backdrop-filter: blur(10px);
@@ -174,8 +176,11 @@ body {
     box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
     z-index: 2;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    align-items: left;
-  }
+    align-items: center; /* Center the content horizontally */
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
 
 .horizontal-container:nth-child(2) {
     margin-left: 2vw;
@@ -279,8 +284,7 @@ b {
 }
 
 .arduino {
-    min-width: 30vw;
-    max-width: 30vw;
+    width:30vw;
     z-index:100;
     margin-left:25vw;
     align-self: left;
@@ -318,4 +322,28 @@ b {
   padding-right: 20vw;
   padding-left: 10vw;
   margin-top:1vw;
+}
+
+@media (max-width: 768px), (orientation: portrait) {
+    .arduino, .calendar, .ozzy, .github {
+        display: none; /* Hide images on mobile or vertical orientation */
+    }
+    .horizontal-container, .secondcontainer{
+      padding:0;
+      margin-left:auto;
+      margin-right:auto;
+      justify-content: center;
+    }
+    .homeCard{
+      align-self: center;
+      margin-right:40%;
+      margin-left:auto;
+      scale: 1.5;
+    }
+    .horizontal-container:nth-child(2) {
+      margin-left: 0;
+      margin-right: 0;
+      padding-left:0;
+      padding-right:0;
+  }
 }
