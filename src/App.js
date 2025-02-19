@@ -38,8 +38,8 @@ function Home() {
         </div>
         <div className="secondcontainer">
         <div className="homeCard timing">
-          <h1>3 Weeks to Work!</h1>
-          <p className="centered-text">The competition runs from <b>February 12th</b> to <b>March 5th</b>! During this time, we will still be holding weekly meetings to help out! Remember to stop by <b>Room 225</b>!</p>
+          <h1>4 Weeks to Work!</h1>
+          <p className="centered-text">The competition runs from <b>February 19th</b> to <b>March 19th</b>! During this time, we will still be holding weekly meetings to help out! Remember to stop by <b>Room 225</b>!</p>
         </div>
         <img src="/calendar.png" className="calendar" alt="calendar" />
         </div>
