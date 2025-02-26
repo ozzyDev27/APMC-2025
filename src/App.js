@@ -96,7 +96,7 @@ function Rules() {
         </div>
         <div className="homeCard rulescard">
           <h1>Rule #5: Components</h1>
-          <p>You are <b>not</b> allowed to use your own components. All components must come from the club! If you want a specific component, fill out the <b>material request form</b> (at the top of this website)!</p>
+          <p>You are <b>not</b> allowed to use your own components. All components must come from the club (Ask an exec if you want to bring your own)! If you want a specific component, fill out the <b>material request form</b> (at the top of this website)!</p>
         </div>
         <div className="homeCard rulescard">
           <h1>Rule #6: The Code</h1>
