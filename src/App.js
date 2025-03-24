@@ -164,15 +164,6 @@ function Awards() {
             <img src="/program.png" className="programming" alt="esp32" />
           </div>
         </div>
-        <div className="hardware">
-          <div className="homeCard happiness">
-            <img src="/happy.png" className="happy" alt="hardware" />
-          </div>
-          <div className="homeCard award secondaward">
-            <h1>Enjoyment Award</h1>
-            <p>The enjoyment award is for projects that are the most fun to use or the most useful! Your project's user experience will be something to remember! You will also get a <b>3D printed trophy</b> for this award!</p>
-          </div>
-        </div>
       </div>
     </div>
   );
