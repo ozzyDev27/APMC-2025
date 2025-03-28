@@ -18,6 +18,7 @@ function Home() {
             <li><a href="https://docs.google.com/forms/d/1ecz6TbcN_RBSE0hCNH_epF25TRaeCkhZ8mJ9HbVuctg/edit" className="text-white">Sign Up</a></li>
             <li><a href="https://forms.gle/4xnHRcp9AjVPUe946" className="text-white">Materials</a></li>
             <li><a href="/awards" className="text-white">Awards</a></li>
+            <li><a href="/winners" className="text-white">Winners</a></li>
           </ul>
         </nav>
         <a href="https://github.com/ozzyDev27/APMC-2025" className="github">
@@ -67,6 +68,7 @@ function Rules() {
             <li><a href="https://docs.google.com/forms/d/1ecz6TbcN_RBSE0hCNH_epF25TRaeCkhZ8mJ9HbVuctg/edit" className="text-white">Sign Up</a></li>
             <li><a href="https://forms.gle/4xnHRcp9AjVPUe946" className="text-white">Materials</a></li>
             <li><a href="/awards" className="text-white">Awards</a></li>
+            <li><a href="/winners" className="text-white">Winners</a></li>
           </ul>
         </nav>
         <a href="https://github.com/ozzyDev27/APMC-2025" className="github">
@@ -127,6 +129,7 @@ function Awards() {
             <li><a href="https://docs.google.com/forms/d/1ecz6TbcN_RBSE0hCNH_epF25TRaeCkhZ8mJ9HbVuctg/edit" className="text-white">Sign Up</a></li>
             <li><a href="https://forms.gle/4xnHRcp9AjVPUe946" className="text-white">Materials</a></li>
             <li><a href="/awards" className="text-white">Awards</a></li>
+            <li><a href="/winners" className="text-white">Winners</a></li>
           </ul>
         </nav>
         <a href="https://github.com/ozzyDev27/APMC-2025" className="github">
@@ -140,7 +143,7 @@ function Awards() {
         <div className="firstplace">
           <div className="homeCard award firstaward">
             <h1>Grand Prize</h1>
-            <p>The first place prize for best overall project is an <b>ESP32</b> with a camera as well as <b>$50</b>! Your project must be balanced between creativity, execution, aesthetics, usefulness, and enjoyment!</p>
+            <p>The first place prize for best overall project is an <b>ESP32</b> with a camera! Your project must be balanced between creativity, execution, aesthetics, usefulness, and enjoyment!</p>
           </div>
           <div className="homeCard esp">
             <img src="/esp32.png" className="esp32" alt="esp32" />
@@ -169,6 +172,60 @@ function Awards() {
   );
 }
 
+function Winners() {
+  return (
+    <div className="Main Page">
+      <FloatingParticles/>
+      <header className="Header">
+        <div className="logoBG">
+          <img src="/apmclogo.png" className="App-logo" alt="logo" />
+        </div>
+        <nav>
+          <ul className="flex space-x-4">
+            <li><a href="/" className="text-white">Home</a></li>
+            <li><a href="/rules" className="text-white">Rules</a></li>
+            <li><a href="https://docs.google.com/forms/d/1ecz6TbcN_RBSE0hCNH_epF25TRaeCkhZ8mJ9HbVuctg/edit" className="text-white">Sign Up</a></li>
+            <li><a href="https://forms.gle/4xnHRcp9AjVPUe946" className="text-white">Materials</a></li>
+            <li><a href="/winners" className="text-white">Winners</a></li>
+          </ul>
+        </nav>
+        <a href="https://github.com/ozzyDev27/APMC-2025" className="github">
+        <img src="/apmcgithub.png" className="github" alt="repo" />
+        </a>
+        <a href="https://github.com/ozzyDev27">
+        <img src="/apmcozzy.png" className="ozzy" alt="ozzy" />
+        </a>
+      </header>
+      <div className="Content">
+        <div className="horizontal-container">
+          <img src="/theguardian.png" className="guardian" alt="arduino" />
+          <div className="homeCard top">
+            <h1>Grand Prize</h1>
+            <p className="centered-text">With the creation of the Guardian Headset, the <b>Grand Prize</b> goes to <b>Abdul Rahman Ahmed</b>! Being both in grade 9 and on a team consisting of one person, this is by far the most impressive project submitted in APMC history!</p>
+          </div>
+        </div>
+        <div className="secondcontainer">
+        <div className="homeCard timing">
+          <h3>Programming Award</h3>
+          <p className="centered-text">With the multiple microcontrollers and complex code of the Snack Alarm, <b>The Bright Fellows'</b> team takes the <b>Programming Award</b>, consisting of <b>Neel Shah</b>, <b>Duke Liu</b>, and <b>Ethan Zhang</b>!</p>
+        </div>
+        <img src="/snackalarm.png" className="calendar" alt="calendar" />
+        </div>
+
+        <div className="horizontal-container">
+          <img src="/greenhouse.png" className="greenhouse" alt="arduino" />
+          <div className="homeCard top">
+            <h1>Hardware Award</h1>
+            <p className="centered-text">Designing an eco-friendly system with exceptional use of hardware, <b>Jack Wang</b>, <b>Pranav Anand</b>, and <b>Kyle Hreljac</b>'s creation of an <b>Automated Greenhouse</b> demonstrates amazing potential!</p>
+          </div>
+        </div>
+        <div className="blank"></div>
+
+      </div>
+    </div>
+  );
+}
+
 function App() {
   return (
     <Router>
@@ -176,6 +233,7 @@ function App() {
         <Route exact path="/" element={<Home />} />
         <Route path="/rules" element={<Rules />} />
         <Route path="/awards" element={<Awards />} />
+        <Route path="/winners" element={<Winners />} />
       </Routes>
     </Router>
   );
